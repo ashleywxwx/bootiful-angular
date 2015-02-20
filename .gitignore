@@ -1,2 +1,9 @@
+#Java
+target/*
+
+#IntelliJ
 .idea/*
 *.iml
+
+#bower
+src/main/resources/static/bower_components/

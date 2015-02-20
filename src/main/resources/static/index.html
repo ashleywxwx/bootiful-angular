@@ -1,1 +1,36 @@
-<h1>Hello World!</h1>
+<!doctype html>
+<html>
+<head>
+    <title>Hello AngularJS</title>
+    <link href="bower_components/bootstrap-css-only/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+        [ng\:cloak], [ng-cloak], .ng-cloak {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body ng-app="WebApp" ng-cloak class="ng-cloak">
+<div ng-controller="LoginCtrl as loginCtrl" class="container">
+    <ul class="nav nav-pills" role="tablist">
+        <li ng-class="{active:tab('home')}"><a href="#/">home</a></li>
+        <li ng-show="!loginCtrl.isAuth()"><a href="#/login">login</a></li>
+        <li ng-show="loginCtrl.isAuth()"><a href="" ng-click="loginCtrl.logout()">logout</a></li>
+    </ul>
+</div>
+
+<div ng-view class="container"></div>
+
+<script src="bower_components/angular/angular.js" type="text/javascript"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js" type="text/javascript"></script>
+<script src="bower_components/angular-route/angular-route.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="main/main.js"></script>
+<script type="text/javascript" src="main/router.js"></script>
+<script type="text/javascript" src="login/loginCtrl.js"></script>
+<script type="text/javascript" src="home/homeCtrl.js"></script>
+<script type="text/javascript" src="login/loginService.js"></script>
+<script type="text/javascript" src="login/authService.js"></script>
+<script type="text/javascript" src="service/restService.js"></script>
+</body>
+</html>
