@@ -48,7 +48,7 @@ angular
 
         // Logs out the user from the server
         function logout(){
-            RestService.logout();
+            RestService.postLogout();
             // creates an empty object, and hopefully scope isn't all wacked.
             var auth = {
                 'name': "",
