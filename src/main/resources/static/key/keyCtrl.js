@@ -6,7 +6,14 @@ angular
 
         var vm = this;
         vm.createKey = createKey;
-        vm.key = createKey();
+        vm.requestKey = requestKey;
+        vm.key = {};
+
+
+        function requestKey(user){
+            $log.log('User:' + JSON.stringify(user));
+            vm.key = "KEY:" + user.name + user.email
+        }
 
         function createKey(){
             $log.log('Creating key...');
