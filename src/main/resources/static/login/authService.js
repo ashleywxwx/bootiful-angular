@@ -25,7 +25,7 @@ angular
 
         // returns if the user is authenticated or not
         function isAuth(){
-            console.log("Going to check auth on: " + JSON.stringify(vm.auth));
+            //console.log("Going to check auth on: " + JSON.stringify(vm.auth));
             if (vm.auth.authenticated == true){
                 return true;
             } else {

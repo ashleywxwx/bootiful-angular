@@ -9,6 +9,9 @@ angular
         }).when('/login', {
             templateUrl : 'login/login.html',
             controller : 'LoginCtrl as loginCtrl'
+        }).when('/key', {
+            templateUrl : 'key/keyCreation.html',
+            controller : 'KeyCtrl as keyCtrl'
         }).otherwise('/');
 
     });

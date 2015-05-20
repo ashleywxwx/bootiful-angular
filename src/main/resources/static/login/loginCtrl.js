@@ -1,4 +1,3 @@
-'use strict';
 angular
     .module('WebApp')
     .controller('LoginCtrl', ['LoginService', 'AuthService', function(LoginService, AuthService) {

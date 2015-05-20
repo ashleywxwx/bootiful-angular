@@ -33,7 +33,7 @@ public class DemoApplication {
                 logout().
             and().
                 authorizeRequests().
-                antMatchers("/", "/index.html", "/home/**", "/login/**", "/main/**", "/service/**","/bower_components/**","/login.html").
+                antMatchers("/", "/index.html", "/home/**", "/login/**", "/main/**", "/service/**","/key/**","/bower_components/**","/login.html").
                 permitAll().
                 anyRequest().
                 authenticated().
