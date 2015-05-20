@@ -1,0 +1,23 @@
+{
+  "name": "bootifulangular",
+  "version": "1.0.0",
+  "description": "A Spring Boot and AngularJS Demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndrewBell/bootiful-angular.git"
+  },
+  "author": "Andrew Bell <andrew@recursivechaos.com>",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/AndrewBell/bootiful-angular/issues"
+  },
+  "homepage": "https://github.com/AndrewBell/bootiful-angular",
+  "devDependencies": {
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.7"
+  }
+}
